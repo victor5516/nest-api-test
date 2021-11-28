@@ -7,6 +7,6 @@ import { CreateAdminDto } from './create-admin.dto';
 
 export class UpdateAdminDto extends PartialType(CreateAdminDto) {
     @IsString()
-    @ApiProperty({ description: `admins's status` })
+    @ApiProperty({ description: `admins status` })
     readonly   status: Status;
 }

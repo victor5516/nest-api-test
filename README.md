@@ -1,73 +1,44 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# JoyCar Admins API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+JoyCar Admins is a project developed to resolve a technical test.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This is not a real or productive JoyCar API.
 
-## Description
+## Table of Contents
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+* Requirements
+* Getting Started
+  * Database
+* Development
+  * Start the application
 
-## Installation
+## Requirements
 
-```bash
-$ npm install
-```
+* Node version >= 14.17.0
+* NPM version >= 6.14.13
+* Nest-CLI >= 7.6.0
 
-## Running the app
+## Getting Started
 
-```bash
-# development
-$ npm run start
+* Clone the repository `git clone https://github.com/victor5516/nest-api-test.git`
+* Install Node Dependencies with the command run `npm install`
+* copy the .env.example file from nest-api-test project `cp .env.example .env`
 
-# watch mode
-$ npm run start:dev
+### Database
 
-# production mode
-$ npm run start:prod
-```
+    In the project folder there is a `docker-compose.yml` file with the configuration of a mongoDB container, run the following commands to start it.
 
-## Test
+* `docker-compose up -d mongo` - Start the mongodb service
+* `docker-compose ps` - Check the status of mongodb
+* `docker-compose down` - turn off the mongodb service
 
-```bash
-# unit tests
-$ npm run test
+## Development
 
-# e2e tests
-$ npm run test:e2e
+* `npm start` - Start application
+* `npm run start:watch` - Start application in watch mode
+* `npm run test` - run Jest test runner
+* `npm run start:prod` - Build application
 
-# test coverage
-$ npm run test:cov
-```
+### Start the application
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+* Run `npm start` and test the api with `http://localhost:3000/v1/docs` in your favourite browser

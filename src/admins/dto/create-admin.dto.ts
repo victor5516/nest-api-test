@@ -12,28 +12,28 @@ export class CreateAdminDto {
 
     @IsString()
     @IsNotEmpty()
-    @ApiProperty({ description: `admins's name` })
+    @ApiProperty({ description: `admin name` })
     readonly name: string;
 
     @IsString()
     @IsNotEmpty()
-    @ApiProperty({ description: `admins's lastName` })
+    @ApiProperty({ description: `admin lastName` })
     readonly lastName: string;
 
 
     @IsEmail()
     @IsNotEmpty()
-    @ApiProperty({ description: `admins's email` })
+    @ApiProperty({ description: `admin email` })
     readonly email: string;
 
     @IsString()
     @IsNotEmpty()
-    @ApiProperty({ description: `admins's role` })
+    @ApiProperty({ description: `admin role` })
     readonly role: string;
 
 
     @IsUrl()
-    @ApiProperty({ description: `admin's picture url` })
+    @ApiProperty({ description: `admin picture url` })
     readonly picture: string;
 
 

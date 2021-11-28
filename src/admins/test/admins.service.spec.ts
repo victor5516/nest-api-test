@@ -2,7 +2,6 @@ import { HttpModule } from '@nestjs/axios';
 import { getModelToken } from '@nestjs/mongoose';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Model } from 'mongoose';
-import { Connection, createConnection } from 'mongoose';
 import { AdminsService } from '../admins.service';
 import { Admin } from '../shchemas/admin.schema';
 import { adminStub, adminStubs } from './stubs/admin.stubs';
