@@ -51,7 +51,49 @@ export const adminStubs = (): Admin[] =>{
         status:Status.Active,
         picture:'fine.com'
        },
-]
+       {
+        name:'Yennifer',
+        lastName:'Angarita',
+        email:'yennifer@email.com',
+        role:'admin.fleetrw',
+        status:Status.Disable,
+        picture:'fine.com'
+       },
+    ]
+
+
 }
+
+export const adminCorrectStubs = (): Admin[] =>{
+    return [
+        {
+        name:'Alberto',
+        lastName:'Suarez',
+        email:'alberto@email.com',
+        role:'admin.fleetrw',
+        status:Status.Pending,
+        picture:'fine.com'
+       },
+       {
+        name:'Mariana',
+        lastName:'Moreno',
+        email:'mariana@email.com',
+        role:'admin.fleetrw',
+        status:Status.Pending,
+        picture:'fine.com'
+       },
+       {
+        name:'Ricardo',
+        lastName:'Perez',
+        email:'ricardo@email.com',
+        role:'admin.fleetrw',
+        status:Status.Active,
+        picture:'fine.com'
+       }
+    ]
+
+
+}
+
 
 
